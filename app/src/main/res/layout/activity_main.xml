@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.release.appiumcommgetter.MainActivity">
+
+    <Button
+        android:id="@+id/btSaveMaxSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Max"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toEndOf="@+id/etMaxSMS"
+        app:layout_constraintTop_toTopOf="@+id/etMaxSMS"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max SMS Send"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <EditText
+        android:id="@+id/etMaxSMS"
+        android:layout_width="277dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="30"
+        android:inputType="number"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMaxSMS"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="173dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="081212312345"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <Button
+        android:id="@+id/btnGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="GetLine1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etPhoneNumber"
+        app:layout_constraintTop_toTopOf="@+id/etPhoneNumber"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnSavePhone"
+        android:layout_width="85dp"
+        android:layout_height="49dp"
+        android:text="Save 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGet"
+        app:layout_constraintTop_toTopOf="@+id/etPhoneNumber"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnResend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhoneNumber"
+        app:layout_constraintVertical_bias="0.609" />
+
+    <TextView
+        android:id="@+id/tvSMSCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear !"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnResend"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <TextView
+        android:id="@+id/tvSMSData"
+        android:layout_width="382dp"
+        android:layout_height="158dp"
+        android:scrollbars="vertical"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSMSCount"
+        app:layout_constraintVertical_bias="0.846" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number 2"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSMSData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhoneNumber"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/etPhoneNumber2"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="081212312345"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSMSData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.031" />
+
+
+    <Button
+        android:id="@+id/btnGet2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="GETLINE2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toEndOf="@+id/etPhoneNumber2"
+        app:layout_constraintTop_toTopOf="@+id/etPhoneNumber2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnSavePhone2"
+        android:layout_width="85dp"
+        android:layout_height="49dp"
+        android:text="Save 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGet2"
+        app:layout_constraintTop_toTopOf="@+id/etPhoneNumber2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvLastChecked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSMSData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSMSCount"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvLastSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSMSData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLastChecked"
+        app:layout_constraintVertical_bias="0.032" />
+
+
+    <Button
+        android:id="@+id/btnCheckInternet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECK SERVICE"
+        android:textSize="@dimen/small_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toEndOf="@+id/btnResend"
+        app:layout_constraintTop_toBottomOf="@+id/etPhoneNumber"
+        app:layout_constraintVertical_bias="0.609" />
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/btnCheckInternet"
+        app:layout_constraintTop_toBottomOf="@+id/etPhoneNumber"
+        app:layout_constraintVertical_bias="0.609" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnCheckInternet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhoneId"
+        app:layout_constraintVertical_bias="0.818">
+
+        <Button
+            android:id="@+id/btnSMSId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SET SMS ID"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

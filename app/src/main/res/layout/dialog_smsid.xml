@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE SIM ID"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cardview_dark_background"/>
+
+    <TextView
+        android:id="@+id/tvSimIdOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sim Id" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rbgSimId"
+            android:layout_width="324dp"
+            android:layout_height="47dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbZero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0" />
+
+            <RadioButton
+                android:id="@+id/rbOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/rbTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+    </LinearLayout>
+</LinearLayout>
